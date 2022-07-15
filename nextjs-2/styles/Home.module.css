@@ -1,0 +1,41 @@
+.container{
+  margin: 0 auto;
+  max-width: 1200px;
+  outline: 1px pink;
+}
+
+.nav{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.nav a[aria-current]{
+  border-bottom: 2px solid darkgray;
+}
+
+.main{
+  padding: 1rem;
+  padding-left: 4rem;
+}
+
+.layout{
+  display: block;
+}
+
+/* layout desktop, la navbar sta a lato */
+@media screen and (min-width: 800px) {
+  .layout{
+    display:flex;
+  }
+  .nav{
+    flex-direction: column;
+    height: auto;
+    width: 10rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-right: 2px solid gray;
+  }
+}
